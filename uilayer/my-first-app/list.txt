@@ -1,0 +1,22 @@
+total 768
+-rw-r--r--    1 puneetvashisht  staff    1027 Mar 26 11:22 README.md
+-rw-r--r--    1 puneetvashisht  staff    3861 Mar 26 11:22 angular.json
+drwxr-xr-x    5 puneetvashisht  staff     160 Mar 26 11:22 e2e
+-rw-r--r--    1 puneetvashisht  staff       0 Mar 26 19:03 list.txt
+drwxr-xr-x   77 puneetvashisht  staff   24864 Mar 26 11:23 node_modules
+-rw-r--r--    1 puneetvashisht  staff  371165 Mar 26 11:23 package-lock.json
+-rw-r--r--    1 puneetvashisht  staff    1311 Mar 26 11:22 package.json
+drwxr-xr-x   16 puneetvashisht  staff     512 Mar 26 11:22 src
+-rw-r--r--    1 puneetvashisht  staff     435 Mar 26 11:22 tsconfig.json
+-rw-r--r--    1 puneetvashisht  staff    1621 Mar 26 11:22 tslint.json
+total 776
+-rw-r--r--    1 puneetvashisht  staff    1027 Mar 26 11:22 README.md
+-rw-r--r--    1 puneetvashisht  staff    3861 Mar 26 11:22 angular.json
+drwxr-xr-x    5 puneetvashisht  staff     160 Mar 26 11:22 e2e
+-rw-r--r--    1 puneetvashisht  staff     710 Mar 26 19:03 list.txt
+drwxr-xr-x   77 puneetvashisht  staff   24864 Mar 26 11:23 node_modules
+-rw-r--r--    1 puneetvashisht  staff  371165 Mar 26 11:23 package-lock.json
+-rw-r--r--    1 puneetvashisht  staff    1311 Mar 26 11:22 package.json
+drwxr-xr-x   16 puneetvashisht  staff     512 Mar 26 11:22 src
+-rw-r--r--    1 puneetvashisht  staff     435 Mar 26 11:22 tsconfig.json
+-rw-r--r--    1 puneetvashisht  staff    1621 Mar 26 11:22 tslint.json
