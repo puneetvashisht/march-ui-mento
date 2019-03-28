@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'my-badge',
@@ -14,9 +14,12 @@ export class BadgeComponent{
 
     @Input('caption')title: string = 'Default!!'
     @Input('count') count: number = 0
+    @Output('countIncremented') countIncremented: EventEmitter<number> = new EventEmitter();
+
 
     incrementCount(){
         this.count++
+        this.countIncremented.emit(this.count);
     }
     reverse(){
         console.log(this.title)
