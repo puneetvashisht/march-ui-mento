@@ -10,9 +10,15 @@
 
 
 <div class="container">
+
+    <div class="row">
+      <add-course></add-course>
+    </div>
+
+    <hr/>
 <div class="row">
-  <my-country></my-country>
-  <!-- <my-card *ngFor="let course of courses" [title]="course.title" [summary]="course.summary"></my-card> -->
+  <!-- <my-country></my-country> -->
+  <my-card *ngFor="let course of courses" [title]="course.title" [summary]="course.summary"></my-card>
   <!-- <my-card title="React" summary="Library from facebook!!"></my-card>
   <my-card title="Angular" summary="Framework from google!!"></my-card>
   <my-card title="React" summary="Library from facebook!!"></my-card>
