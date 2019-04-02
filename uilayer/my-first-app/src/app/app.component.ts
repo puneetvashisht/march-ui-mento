@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from './models/course';
 import { HttpClient } from '@angular/common/http';
+import { CourseService } from './services/course.service';
 
 
 @Component({
@@ -13,17 +14,18 @@ export class AppComponent implements OnInit {
 
   courses: Array<Course> = []
 
-  constructor(private http: HttpClient){
+  constructor(private courseService: CourseService){
 
   }
 
 
   ngOnInit(){
     console.log('Initialization...')
-    this.http.get('http://localhost:4200/assets/dummy.json')
+    this.courseService.fetchAllCourses()
     .subscribe((res: Array<Course>)=> {
       console.log(res)
       this.courses = res;
     })
+
   }
 }

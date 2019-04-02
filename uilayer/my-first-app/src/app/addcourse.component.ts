@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { CourseService } from './services/course.service';
 
 @Component({
     selector: 'add-course',
@@ -24,7 +26,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddCourseComponent implements OnInit {
 
-    constructor() { }
+    constructor(private courseService: CourseService) { }
 
     ngOnInit() { 
 
@@ -32,7 +34,9 @@ export class AddCourseComponent implements OnInit {
 
     addCourse(title: string, summary: string){
         console.log(title, summary);
-
+        var course = {title, summary}
+        this.courseService.addCourse(course)
+        .subscribe(res=>console.log(res))
         // http post 
     }
 

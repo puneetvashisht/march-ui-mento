@@ -9,6 +9,7 @@ import { CardComponent } from './card.component';
 import { CountryComponent } from './components/country.component';
 import { CityComponent } from './components/city.component';
 import { AddCourseComponent } from './addcourse.component';
+import { CourseService } from './services/course.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { AddCourseComponent } from './addcourse.component';
   imports: [
     BrowserModule, HttpClientModule
   ],
-  providers: [],
+  providers: [CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
