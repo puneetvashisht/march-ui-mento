@@ -11,14 +11,26 @@
 
 <div class="container">
 
-    <div class="row">
+  <!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/">View</a>
+  </nav>
+  
+  <!-- As a heading -->
+  <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" routerLink="/add">Add</a>
+  </nav>
+
+  <router-outlet></router-outlet>
+
+    <!-- <div class="row">
       <add-course></add-course>
     </div>
 
-    <hr/>
+    <hr/> -->
 <div class="row">
   <!-- <my-country></my-country> -->
-  <my-card *ngFor="let course of courses" [title]="course.title" [summary]="course.summary"></my-card>
+  <!-- <my-card *ngFor="let course of courses" [title]="course.title" [summary]="course.summary"></my-card> -->
   <!-- <my-card title="React" summary="Library from facebook!!"></my-card>
   <my-card title="Angular" summary="Framework from google!!"></my-card>
   <my-card title="React" summary="Library from facebook!!"></my-card>
