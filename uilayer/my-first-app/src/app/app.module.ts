@@ -19,7 +19,7 @@ import { ViewComponent } from './components/view.component';
 
 const appRoutes: Routes = [
   { path: '', component: ViewComponent },
-  { path: 'add',component: AddComponent }
+  { path: 'add',component: AddCourseComponent }
 ]
 
 @NgModule({

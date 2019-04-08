@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-app.use(cors())
+app.use(cors("*"))
 
 var courses = [
     {"title": "Angular!!", "summary": "Framework from Google!!"},
